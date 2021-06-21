@@ -1,0 +1,46 @@
+#projects {
+    text-align: center;
+}
+
+#projects h1 {
+    font-size: 2em;
+    padding: 1em;
+}
+
+#projects p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.projects {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-wrapper {
+    height: 320px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.project {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: 20px;
+
+    box-shadow: inset 0px 0px 30px var(--color5);
+    background-color: var(--color4);
+}
+
+.github {
+    margin-bottom: 300px;
+}
+
+.github p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,85 @@
+#about {
+    width: 100%;
+    background-color: var(--color5);
+}
+
+.about {
+    text-align: center;
+    color: var(--color2);
+    padding: 10% 20%;
+}
+
+.about > h1 {
+    font-size: 2em;
+    margin-bottom: .8em;
+    color: var(--color1);
+}
+
+.about > p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.skills {
+    width: 100%;
+    position: relative;
+    height: 150px;
+}
+
+.skills-section {
+    position: absolute;
+    background-color: var(--color2);
+    top: -3em;
+    width: 100%;
+    box-shadow: 0px 0px 2px var(--color5);
+    border-radius: 20px;
+    display: flex;
+}
+
+.skill {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 5em 2em;
+    line-height: 1.8em;
+}
+
+.skill-middle {
+    border-left: 1px solid var(--color4);
+    border-right: 1px solid var(--color4);
+}
+
+.skill .skill-type {
+    height: 10em;
+}
+
+.skill .skill-tech {
+    height: 5em;
+}
+
+.skill .skill-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.skill h2 {
+    color: var(--color5);
+    margin-bottom: 1em;
+}
+
+.skill h3 {
+    margin-top: 2em;
+    color: var(--color1);
+    margin-bottom: .3em;
+    font-weight: 600;
+}
+
+.skill p {
+    font-size: 1.1em;
+}
+
+.skill ul {
+    list-style: none;
+}

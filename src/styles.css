@@ -4,7 +4,36 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color1: #e63946;
+    --color2: #f1faee;
+    --color3: #a8dadc;
+    --color4: #457b9d;
+    --color5: #1d3557;
+    --font1: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    background-color: #333;
-    color: white;
+    background-color: var(--color2);
+    color: var(--color5);
+    font-family: var(--font1);
+}
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.debug-red {
+    border: 1px dashed red;
+}
+.debug-green {
+    border: 1px dashed green;
+}   
+.debug-blue {
+    border: 1px dashed blue;
+}
+.debug-gray {
+    border: 1px dashed rgb(207, 207, 207);
 }
