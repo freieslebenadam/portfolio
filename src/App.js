@@ -12,7 +12,7 @@ import Contact from './sections/Contact'
 
 function App() {
     return (
-        <div>
+        <>
             <Favicon url='./favicon.ico' />
             <Header />
             <main>
@@ -23,7 +23,7 @@ function App() {
                 <Contact />
             </main>
             <Footer />
-        </div>
+        </>
     )
 }
 

@@ -21,7 +21,7 @@ function Button({link, text, icon, iconHover, textColor}) {
 
     return (
         <div ref={ref} className="special-button">
-            <a href={link}>
+            <a href={link} target="_blank">
                 {hover?icnHover:icn}
                 <span className={textColor === "white" ? "white-text" : ""} 
                       style={icn!==null?{paddingLeft: 10}:{paddingLeft: 0}}

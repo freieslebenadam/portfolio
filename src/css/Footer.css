@@ -1,5 +1,29 @@
 footer {
     width: 100%;
     background-color: var(--color1);
-    height: 200px;
+    padding: 5em 0 3em 0;
+    color: var(--color5);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: .5em;
+}
+
+footer ul li a {
+    font-weight: 700;
+    color: var(--color5);
+    font-size: 1.05em;
+}
+
+footer p {
+    margin: 1em;
+    font-size: .95em;
 }
