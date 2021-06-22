@@ -1,4 +1,5 @@
 import React from 'react'
+import Favicon from 'react-favicon'
 
 import Header from './components/Header'
 import Padder from './components/Padder'
@@ -12,6 +13,7 @@ import Contact from './sections/Contact'
 function App() {
     return (
         <div>
+            <Favicon url='./favicon.ico' />
             <Header />
             <main>
                 <Welcome />
@@ -19,8 +21,8 @@ function App() {
                 <Padder h={650} />
                 <Projects />
                 <Contact />
-                <Footer />
             </main>
+            <Footer />
         </div>
     )
 }
