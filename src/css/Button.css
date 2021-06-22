@@ -24,3 +24,7 @@
     background-color: var(--color1);
     color: var(--color2);
 }
+
+.special-button .white-text {
+    color: var(--color2);
+}

@@ -60,10 +60,18 @@ nav ul li a.nav-item {
     font-size: 1.2em;
     line-height: 3em;
     padding: .5em 1em;
+    transition: 60ms ease;
+}
+nav ul li a.nav-item:hover {
+    color: var(--color1)
 }
 nav ul li a.special-item {
     font-weight: 700;
     color: var(--color1);
     border: 2px var(--color1) solid;
     border-radius: 2em;
+}
+nav ul li a.special-item:hover {
+    color: var(--color2);
+    background-color: var(--color1);
 }

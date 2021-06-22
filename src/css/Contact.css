@@ -1,4 +1,98 @@
 #contact {
     background-color: var(--color5);
     color: var(--color2);
+    padding-bottom: 200px;
+}
+
+.contact {
+    text-align: center;
+    color: var(--color2);
+    padding: 12% 20% 5% 20%;
+}
+
+.contact > h1 {
+    font-size: 2em;
+    margin-bottom: .8em;
+    color: var(--color2);
+}
+
+.contact > p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form fieldset {
+    border: none;
+}
+
+.contact-form fieldset > div {
+    padding: 1em;
+    width: 100%;
+}
+
+.contact-form fieldset.half-split {
+    display: flex;
+}
+
+.contact-form label {
+    display: block;
+    padding: .4em .8em;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1em 1em 1em 1em;
+    font-family: var(--font1);
+    font-size: 18px;
+    width: 100%;
+    margin-top: 5px;
+    color: var(--color5);
+    background-color: var(--color2);
+    border: none;
+    border-radius: .3em;
+    letter-spacing: 1px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form .button-wrapper {
+    text-align: center;
+    padding: 25px;
+}
+
+.contact-form button {
+    padding: .8em 4em;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color1);
+    color: var(--color2);
+    text-decoration: none;
+    border-radius: 2em;
+    position: relative;
+    transition: 50ms;
+    background-color: transparent;
+}
+.contact-form button:hover {
+    cursor: pointer;
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(0, 0, 0, 0.35);
 }

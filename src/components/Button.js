@@ -1,9 +1,11 @@
 import React from 'react'
 import '../css/Button.css'
-import gitMark from '../img/github_mark.svg'
+import useHover from '../hooks/useHover'
 
-function Button({link, text, icon}) {
+function Button({link, text, icon, iconHover, textColor}) {
+    const [hover, ref] = useHover()
     let icn = null
+    let icnHover = null
 
     if (icon !== null) {
         icn = <img width={25} height={25} src={icon} alt="Icon not found" />
@@ -11,11 +13,19 @@ function Button({link, text, icon}) {
         icn = ""
     }
 
+    if (iconHover !== null) {
+        icnHover = <img width={25} height={25} src={iconHover} alt="Icon not found" />
+    } else {
+        icnHover = icn
+    }
+
     return (
-        <div className="special-button">
+        <div ref={ref} className="special-button">
             <a href={link}>
-                {icn}
-                <span style={icn!==null?{paddingLeft: 10}:{paddingLeft: 0}}>{text}</span>
+                {hover?icnHover:icn}
+                <span className={textColor === "white" ? "white-text" : ""} 
+                      style={icn!==null?{paddingLeft: 10}:{paddingLeft: 0}}
+                >{text}</span>
             </a>
         </div>
     )
@@ -23,8 +33,10 @@ function Button({link, text, icon}) {
 
 Button.defaultProps = {
     icon: null,
+    iconHover: null,
     link: "#",
-    text: "Default text..."
+    text: "Default text...",
+    textColor: "default"
 }
 
 export default Button

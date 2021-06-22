@@ -1,6 +1,9 @@
 import React from 'react'
 import '../css/About.css'
 import Skill from '../components/Skill'
+import designIcon from '../img/design.svg'
+import frontEndIcon from '../img/frontend.svg'
+import backEndIcon from '../img/backend.svg'
 
 function About() {
     return (
@@ -17,18 +20,21 @@ function About() {
                             text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nam libero tempore."
                             tech={"UX, UI, Web, Apps, Loga"}
                             tools={["Illustrator", "Photoshop"]}
+                            icon={designIcon}
                         />
                         <Skill middle={true} 
                             type="Front-end Developer"
                             text="Lorem ipsum dolor elit. Curabitur sagittis hendrerit ante. Nam libero tempore. Gendrerit ante."
                             tech={"HTML, CSS, JavaScript, jQuery, React"}
                             tools={["Visual Studio Code", "NPM", "Github"]}
+                            icon={frontEndIcon}
                         />
                         <Skill 
                             type="Back-end Developer"
                             text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante."
                             tech={"PHP, SQL, API"}
                             tools={["Apache", "MySQL", "Visual Studio"]}
+                            icon={backEndIcon}
                         />
                     </div>
                 </section>

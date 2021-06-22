@@ -19,11 +19,23 @@ body {
     font-family: var(--font1);
 }
 
+
 .container {
     width: 65%;
     margin: 0 auto;
     height: 100%;
 }
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .debug-red {
     border: 1px dashed red;

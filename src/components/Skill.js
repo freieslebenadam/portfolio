@@ -1,12 +1,13 @@
 import React from 'react'
 
-function Skill({middle, type, text, tech, tools}) {
+function Skill({middle, type, text, tech, tools, icon}) {
     const skillClass = middle ? `skill skill-middle` : "skill"
-    const toolsArr = tools.map(tool => (<li>{tool}</li>))
+    const toolsArr = tools.map(tool => <li key={tool}>{tool}</li>)
+
     return (
         <div className={skillClass}>
-            <div className="skill-icon debug-gray">
-                
+            <div className="skill-icon">
+                <img src={icon} alt="Obrázek nenalezen" />
             </div>
             <div className="skill-type">
                 <h2>{type}</h2>
@@ -24,6 +25,10 @@ function Skill({middle, type, text, tech, tools}) {
             </div>
         </div>
     )
+}
+
+Skill.defaultProps = {
+    icon: null
 }
 
 export default Skill
