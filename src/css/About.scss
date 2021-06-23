@@ -1,0 +1,153 @@
+@import '../styles.scss';
+
+#about {
+    width: 100%;
+    background-color: $color5;
+
+    .about {
+        text-align: center;
+        color: $color2;
+        padding: 30% 0;
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: .8em;
+            color: $color2;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+    }
+
+    .skills {
+        width: 100%;
+        position: relative;
+        height: 150px;
+
+        .skills-section {
+            position: absolute;
+            background-color: $color2;
+            top: -3em;
+            width: 100%;
+            box-shadow: 0px 0px 2px $color5;
+            border-radius: 20px;
+            display: block;
+
+            .skill {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                padding: 5em 2em;
+                line-height: 1.8em;
+
+                .skill-type {
+                    height: 100%;
+                }
+                .skill-tech {
+                    height: 100%;
+                }
+                .skill-icon {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                    margin-bottom: 2em;
+                    padding: .8em;
+                }
+                h2 {
+                    color: $color5;
+                    margin-bottom: 1em;
+                }
+                h3 {
+                    margin-top: 2em;
+                    color: $color1;
+                    margin-bottom: .3em;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 1.1em;
+                }
+                ul {
+                    list-style: none;
+                }
+            }
+
+            .skill-middle {
+                border-left: none;
+                border-right: none;
+                border-top: 1px solid $color5;
+                border-bottom: 1px solid $color5;
+            }            
+        }
+    }
+
+}
+
+@media only screen and (min-width: 425px) {
+    #about {
+        .about {
+            padding: 20% 0;
+        }
+
+        .skills {
+            .skills-section {
+                .skill {
+                    .skill-type {
+                        height: 10em;
+                    }
+                    .skill-tech {
+                        height: 5em;
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    #about {
+        .about {
+            padding: 10% 20%;
+        }
+
+        .skills {
+            .skills-section {
+                display: flex;
+
+                .skill-middle {
+                    border-left: 1px solid $color5;
+                    border-right: 1px solid $color5;
+                    border-top: none;
+                    border-bottom: none;
+                }
+
+                .skill {
+                    .skill-type {
+                        height: 13em;
+                    }
+                    .skill-tech {
+                        
+                        height: 6em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 970px) {
+    #about {
+        .skills {
+            .skills-section {
+                .skill {
+                    .skill-type {
+                        height: 10em;
+                    }
+                    .skill-tech {
+                        height: 6em;
+                    }
+                }
+            }
+        }
+    }
+}

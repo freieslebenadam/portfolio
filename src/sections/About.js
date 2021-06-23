@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/About.css'
+import '../css/About.scss'
 import Skill from '../components/Skill'
 import designIcon from '../img/design.svg'
 import frontEndIcon from '../img/frontend.svg'
@@ -25,7 +25,7 @@ function About() {
                         <Skill middle={true} 
                             type="Front-end Developer"
                             text="Lorem ipsum dolor elit. Curabitur sagittis hendrerit ante. Nam libero tempore. Gendrerit ante."
-                            tech={"HTML, CSS, JavaScript, jQuery, React"}
+                            tech={"HTML, CSS, JavaScript, jQuery, React, SASS"}
                             tools={["Visual Studio Code", "NPM", "Github"]}
                             icon={frontEndIcon}
                         />

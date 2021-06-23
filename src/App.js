@@ -1,7 +1,7 @@
 import React from 'react'
 import Favicon from 'react-favicon'
 
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Padder from './components/Padder'
 import Footer from './components/Footer'
 
@@ -14,11 +14,11 @@ function App() {
     return (
         <>
             <Favicon url='./favicon.ico' />
-            <Header />
+            <Navbar />
             <main>
                 <Welcome />
                 <About />
-                <Padder h={650} />
+                <Padder />
                 <Projects />
                 <Contact />
             </main>

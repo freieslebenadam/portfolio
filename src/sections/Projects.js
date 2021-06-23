@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Projects.css'
+import '../css/Projects.scss'
 import Project from '../components/Project'
 import Button from '../components/Button'
 import gitMark from '../img/github_mark.svg'
@@ -18,7 +18,9 @@ function Projects() {
                 </section>
                 <section className="github">
                     <p>Jestli Vás zajímá kód za těmito projekty,</p>
-                    <Button link="https://github.com/freieslebenadam" text="Navštivte můj Github" icon={gitMark} iconHover={gitMarkLight} />
+                    <Button link="https://github.com/freieslebenadam" icon={gitMark} iconHover={gitMarkLight}>
+                        Navštivte můj Github
+                    </Button>
                 </section>
             </div>
         </article>

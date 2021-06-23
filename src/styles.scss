@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$color1: #e63946;
+$color2: #f1faee;
+$color5: #1d3557;
+$font1: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+body {
+    background-color: $color2;
+    color: $color5;
+    font-family: $font1;
+}
+
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1060px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+$debug-red: 1px dashed red;
+$debug-blue: 1px dashed blue;
+$debug-green: 1px dashed green;
+$debug-yellow: 1px dashed yellow;
+$debug-gray: 1px dashed gray;

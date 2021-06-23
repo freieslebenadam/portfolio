@@ -13,7 +13,9 @@ function Project() {
                 <div style={hover?{display: "flex"}:{display: "none"}} className="project-info">
                     <div className="overlay"></div>
                     <p>Lorem ipsum dolor elit. Curabitur sagittis hendrerit ante sagittis hendrerit ante. </p>
-                    <Button href="#" text="Visit website" textColor="white" />
+                    <Button href="#" textColor="white">
+                        Visit website
+                    </Button>
                 </div>
             </div>
         </div>

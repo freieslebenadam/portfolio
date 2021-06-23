@@ -1,13 +1,10 @@
 import React from 'react'
+import '../css/Padder.scss'
 
-function Padder({debug, h}) {
+function Padder() {
     return (
-        <div className={debug ? "debug-red" : ""} style={{height: h}}></div>
+        <div className="padder"></div>
     )
-}
-
-Padder.defaultProps = {
-    debug: false
 }
 
 export default Padder

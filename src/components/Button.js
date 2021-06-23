@@ -1,8 +1,8 @@
 import React from 'react'
-import '../css/Button.css'
+import '../css/Button.scss'
 import useHover from '../hooks/useHover'
 
-function Button({link, text, icon, iconHover, textColor}) {
+function Button({link, icon, iconHover, textColor, children}) {
     const [hover, ref] = useHover()
     let icn = null
     let icnHover = null
@@ -25,17 +25,17 @@ function Button({link, text, icon, iconHover, textColor}) {
                 {hover?icnHover:icn}
                 <span className={textColor === "white" ? "white-text" : ""} 
                       style={icn!==null?{paddingLeft: 10}:{paddingLeft: 0}}
-                >{text}</span>
+                >{children}</span>
             </a>
         </div>
     )
 }
 
 Button.defaultProps = {
+    link: "#",
     icon: null,
     iconHover: null,
     link: "#",
-    text: "Default text...",
     textColor: "default"
 }
 

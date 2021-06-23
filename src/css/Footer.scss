@@ -1,0 +1,31 @@
+@import '../styles.scss';
+
+footer {
+    width: 100%;
+    background-color: $color1;
+    padding: 5em 0 3em 0;
+    color: $color5;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+
+    p {
+        margin: 1em;
+        font-size: .95em;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: .5em;
+
+            a {
+                font-weight: 700;
+                color: $color5;
+                font-size: 1.05em;
+            }
+        }
+    }
+}

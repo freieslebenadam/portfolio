@@ -1,0 +1,138 @@
+@import '../styles.scss';
+
+#contact {
+    background-color: $color5;
+    color: $color2;
+    padding-bottom: 200px;
+
+    .contact {
+        text-align: center;
+        color: $color2;
+        padding: 12% 20% 5% 20%;
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: .8em;
+            color: $color2;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+    }
+
+    .contact-form {
+        width: 60%;
+        margin: 0 auto;
+
+        fieldset {
+            border: none;
+
+            > div {
+                padding: 1em;
+                width: 100%;
+            }
+
+            &.half-split {
+                display: flex;
+            }
+        }
+
+        label {
+            display: block;
+            padding: .4em .8em;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        input, textarea {
+            padding: 1em 1em 1em 1em;
+            font-family: $font1;
+            font-size: 18px;
+            width: 100%;
+            margin-top: 5px;
+            color: $color5;
+            background-color: $color2;
+            border: none;
+            border-radius: .3em;
+            letter-spacing: 1px;
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.35);
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .button-wrapper {
+            text-align: center;
+            padding: 25px;
+        }
+
+        button {
+            padding: .8em 4em;
+            font-weight: 700;
+            font-size: 1.2em;
+            border: 2px solid $color1;
+            color: $color2;
+            text-decoration: none;
+            border-radius: 2em;
+            position: relative;
+            transition: 50ms;
+            background-color: transparent;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color1;
+                color: $color2;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #contact {
+        .contact {
+            padding: 12% 10% 5% 10%;
+        }
+        .contact-form {
+            width: 80%;
+            fieldset {
+                &.half-split {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #contact {
+        .contact {
+            padding: 12% 8% 5% 8%;
+        }
+        .contact-form {
+            width: 100%;
+            fieldset {
+                &.half-split {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #contact {
+        .contact {
+            padding: 25% 5% 10% 5%;
+        }
+    }
+}
