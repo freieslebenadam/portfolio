@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Button.scss'
 import useHover from '../hooks/useHover'
 
-function Button({link, icon, iconHover, textColor, children}) {
+function Button({link, target, icon, iconHover, textColor, children}) {
     const [hover, ref] = useHover()
     let icn = null
     let icnHover = null
@@ -21,7 +21,7 @@ function Button({link, icon, iconHover, textColor, children}) {
 
     return (
         <div ref={ref} className="special-button">
-            <a href={link} target="_blank">
+            <a href={link} target={target}>
                 {hover?icnHover:icn}
                 <span className={textColor === "white" ? "white-text" : ""} 
                       style={icn!==null?{paddingLeft: 10}:{paddingLeft: 0}}
@@ -36,7 +36,8 @@ Button.defaultProps = {
     icon: null,
     iconHover: null,
     link: "#",
-    textColor: "default"
+    textColor: "default",
+    target: "_self"
 }
 
 export default Button

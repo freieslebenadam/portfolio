@@ -41,7 +41,7 @@
                 }
 
                 &-preview {
-                    background: url("http://placekitten.com/300/200") no-repeat;
+                    background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
                     z-index: -2;

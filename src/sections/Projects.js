@@ -4,6 +4,8 @@ import Project from '../components/Project'
 import Button from '../components/Button'
 import gitMark from '../img/github_mark.svg'
 import gitMarkLight from '../img/github_mark_light.svg'
+import thumbnailProject1 from '../img/project1_thumbnail.jpg'
+import thumbnailProject2 from '../img/project2_thumbnail.jpg'
 
 function Projects() {
     return (
@@ -12,13 +14,13 @@ function Projects() {
                 <h1>Moje projekty:</h1>
                 <p>Lorem ipsum dolor elit. Curabitur sagittis hendrerit ante.</p>
                 <section className="projects">
-                    <Project />
-                    <Project />
+                    <Project img={thumbnailProject1}/>
+                    <Project img={thumbnailProject2} />
                     <Project />
                 </section>
                 <section className="github">
                     <p>Jestli Vás zajímá kód za těmito projekty,</p>
-                    <Button link="https://github.com/freieslebenadam" icon={gitMark} iconHover={gitMarkLight}>
+                    <Button link="https://github.com/freieslebenadam" target="_blank" icon={gitMark} iconHover={gitMarkLight}>
                         Navštivte můj Github
                     </Button>
                 </section>
