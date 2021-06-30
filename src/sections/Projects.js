@@ -6,6 +6,7 @@ import gitMark from '../img/github_mark.svg'
 import gitMarkLight from '../img/github_mark_light.svg'
 import thumbnailProject1 from '../img/project1_thumbnail.jpg'
 import thumbnailProject2 from '../img/project2_thumbnail.jpg'
+import thumbnailProject3 from '../img/project3_thumbnail.jpg'
 
 function Projects() {
     return (
@@ -16,7 +17,7 @@ function Projects() {
                 <section className="projects">
                     <Project img={thumbnailProject1}/>
                     <Project img={thumbnailProject2} />
-                    <Project />
+                    <Project img={thumbnailProject3} />
                 </section>
                 <section className="github">
                     <p>Jestli Vás zajímá kód za těmito projekty,</p>
