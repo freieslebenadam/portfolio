@@ -13,7 +13,7 @@ function Projects() {
         <article id="projects">
             <div className="container">
                 <h1>Ukázka mé práce:</h1>
-                <p>Zde je pár projektů jako ukázka mého vývoje webů.</p>
+                <p>Zde je pár projektů jako ukázka mého vývoje webů. <br /> Všechny využívají podobné technologie a jsou plně responsivní.</p>
                 <section className="projects">
                     <Project img={thumbnailProject1}>
                         <b>React</b> aplikace s využitím funkcionálních komponentů a preprocesoru <b>SASS</b>

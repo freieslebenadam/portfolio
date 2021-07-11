@@ -21,11 +21,11 @@ function Navbar() {
                 </div>
                 <div className={`navbar-menu ${isActive}`}>
                     <div className="navbar-links">
-                        <a href="#about" className="navbar-item">About me</a>
-                        <a href="#projects" className="navbar-item">Projects</a>
+                        <a href="#about" className="navbar-item">O mně</a>
+                        <a href="#projects" className="navbar-item">Projekty</a>
                         <div className="navbar-item">
                             <Button link="#contact">
-                                Contact
+                                Kontakt
                             </Button>
                         </div>
                     </div>

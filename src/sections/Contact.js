@@ -9,7 +9,7 @@ function Contact() {
             <div className="container">
                 <section className="contact">
                     <h1>Kontaktujte mě</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil ipsum dolor sit amet.</p>
+                    <p>Neváhejte se na mě obrátit s jakýmikoliv připomínkami, nebo podrobnějšími otázkami. Zde mi můžete napsat.</p>
                 </section> 
                 <ContactForm />
             </div>

@@ -12,6 +12,7 @@
         font-size: 1.2em;
         font-weight: 500;
         margin-bottom: 30px;
+        line-height: 1.5em;
     }
 
     .projects {
@@ -60,7 +61,7 @@
 
                     .overlay {
                         background-color: $color5;
-                        opacity: .8;
+                        opacity: .9;
                         z-index: -1;
                     }
                 }
