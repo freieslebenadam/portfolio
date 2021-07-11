@@ -24,7 +24,7 @@ function Navbar() {
                         <a href="#about" className="navbar-item">About me</a>
                         <a href="#projects" className="navbar-item">Projects</a>
                         <div className="navbar-item">
-                            <Button>
+                            <Button link="#contact">
                                 Contact
                             </Button>
                         </div>

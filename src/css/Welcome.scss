@@ -16,9 +16,30 @@
         margin-bottom: 20px;
     }
 
+    .continue-btn {
+        background-color: $color1;
+        display: inline-block;
+        border-radius: 2.5rem;
+        padding: 1rem;
+        color: $color2;
+        border: 0.2em $color1 solid;
+        transition: 100ms ease;
+        margin-top: 2.5rem;
+        i {
+            line-height: 0;
+            padding: 0 .15em;
+            font-weight: 900;
+        }
+        &:hover {
+            cursor: pointer;
+            color: $color1;
+            background-color: transparent;
+        }
+    }
+
     .temp-svgs {
         width: 100%;
-        height: 30rem;
+        height: 25rem;
         background: url(../img/devices.svg) no-repeat;
         background-position: bottom;
         background-size: 100%;
@@ -29,7 +50,7 @@
     .welcome {
         .temp-svgs {
             background-size: 65%;
-            height: 35rem;
+            height: 28.5rem;
         }
     }
 }
@@ -38,7 +59,7 @@
     .welcome {
         .temp-svgs {
             background-size: 100%;
-            height: 20rem;
+            height: 15rem;
         }
     }
 }

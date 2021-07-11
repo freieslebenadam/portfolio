@@ -7,9 +7,10 @@ function Welcome() {
             <div className="welcome">
                 <h1>Designer, Front-end & Back-end Developer</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                <div className="temp-svgs"> 
-
-                </div>
+                <a href="#about" className="continue-btn">
+                    <i className="fas fa-chevron-down"></i>
+                </a>
+                <div className="temp-svgs"></div>
             </div>
         </div>
     )

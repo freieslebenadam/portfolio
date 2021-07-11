@@ -12,12 +12,18 @@ function Projects() {
     return (
         <article id="projects">
             <div className="container">
-                <h1>Moje projekty:</h1>
-                <p>Lorem ipsum dolor elit. Curabitur sagittis hendrerit ante.</p>
+                <h1>Ukázka mé práce:</h1>
+                <p>Zde je pár projektů jako ukázka mého vývoje webů.</p>
                 <section className="projects">
-                    <Project img={thumbnailProject1}/>
-                    <Project img={thumbnailProject2} />
-                    <Project img={thumbnailProject3} />
+                    <Project img={thumbnailProject1}>
+                        <b>React</b> aplikace s využitím funkcionálních komponentů a preprocesoru <b>SASS</b>
+                    </Project>
+                    <Project img={thumbnailProject2}>
+                        Jednoduchá multipage aplikace s využitím <b>React Routeru</b>
+                    </Project>
+                    <Project img={thumbnailProject3}>
+                        Web aplikace používající <b>API</b> na zkracování odkazů a <b>React Context</b>
+                    </Project>
                 </section>
                 <section className="github">
                     <p>Jestli Vás zajímá kód za těmito projekty,</p>

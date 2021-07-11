@@ -10,7 +10,7 @@ function About() {
         <article id="about">
             <div className="container">
                 <section className="about">
-                    <h1>Já jsem adam, tady jsou mé znalosti:</h1>
+                    <h1>Jmenuji se Adam, těší mě</h1>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Facere possimus, omnis volup.</p>
                 </section>
                 <section className="skills">

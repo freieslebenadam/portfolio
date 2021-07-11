@@ -29,6 +29,7 @@ function ContactForm() {
                         placeholder="Jan"
                         value={formValues.firstName}
                         onChange={(e) => handleChange(e)}
+                        required={true}
                     />
                 </div>
                 <div>
@@ -39,6 +40,7 @@ function ContactForm() {
                         placeholder="Novák"
                         value={formValues.lastName}
                         onChange={(e) => handleChange(e)}
+                        required={true}
                     />
                 </div>
             </fieldset>
@@ -51,6 +53,7 @@ function ContactForm() {
                         placeholder="novak@email.cz"
                         value={formValues.email}
                         onChange={(e) => handleChange(e)}
+                        required={true}
                     />
                 </div>
             </fieldset>
@@ -63,6 +66,7 @@ function ContactForm() {
                         placeholder="Pár slov..."
                         value={formValues.text}
                         onChange={(e) => handleChange(e)}
+                        required={true}
                     />
                 </div>
             </fieldset>

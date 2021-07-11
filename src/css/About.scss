@@ -30,7 +30,7 @@
             background-color: $color2;
             top: -3em;
             width: 100%;
-            box-shadow: 0px 0px 2px $color5;
+            box-shadow: 0 0 .15rem $color5;
             border-radius: 20px;
             display: block;
 
@@ -75,8 +75,8 @@
             .skill-middle {
                 border-left: none;
                 border-right: none;
-                border-top: 1px solid $color5;
-                border-bottom: 1px solid $color5;
+                border-top: 1px solid $color4;
+                border-bottom: 1px solid $color4;
             }            
         }
     }
@@ -115,8 +115,8 @@
                 display: flex;
 
                 .skill-middle {
-                    border-left: 1px solid $color5;
-                    border-right: 1px solid $color5;
+                    border-left: 1px solid $color4;
+                    border-right: 1px solid $color4;
                     border-top: none;
                     border-bottom: none;
                 }
