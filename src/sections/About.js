@@ -11,7 +11,7 @@ function About() {
             <div className="container">
                 <section className="about">
                     <h1>Pár slov o mně</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Facere possimus, omnis volup.</p>
+                    <p>Jmenuji se Adam a vývoji webových aplikací se věnuji už téměř 6 let. Primárně se věnuji front-end vývoji, ale neznamená to, že nemám znalost i v dalších odvětví. Baví mne stavět aplikace od základu a vymýšlet způsoby, jak svůj kód vylepšovat. Mimo design a webový vývoj mám také zkušenosti s programováním v jazyce C# a se střihem videí.</p>
                 </section>
                 <section className="skills">
                     <div className="skills-section">

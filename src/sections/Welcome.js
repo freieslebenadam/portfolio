@@ -6,7 +6,7 @@ function Welcome() {
         <div className="container">
             <div className="welcome">
                 <h1>Designer, Front-end & Back-end Developer</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <p>Navrhuji a programuji webové aplikace.</p>
                 <a href="#about" className="continue-btn">
                     <i className="fas fa-chevron-down"></i>
                 </a>

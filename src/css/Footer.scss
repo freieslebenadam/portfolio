@@ -9,12 +9,29 @@ footer {
     font-size: 1.2em;
     font-weight: 500;
 
+    .logo-wrapper {
+        transition: 100ms ease;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+    }
+
     p {
         margin: 1em;
         font-size: .95em;
+        font-weight: 400;
+        color: #BBB;
+        font-size: 16px;
+
+        strong {
+            color: $color2;
+            font-size: 1.2em;
+        }
     }
 
     ul {
+        margin: 2.5rem 0;
         list-style: none;
 
         li {
@@ -26,6 +43,8 @@ footer {
                 color: $color1;
                 font-size: 1.05em;
                 transition: 80ms ease;
+                font-size: 1.8em;
+                padding: 0 1rem;
 
                 &:hover {
                     color: $color2;
