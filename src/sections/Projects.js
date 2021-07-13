@@ -15,13 +15,13 @@ function Projects() {
                 <h1>Ukázka mé práce:</h1>
                 <p>Zde je pár projektů jako ukázka mého vývoje webů. <br /> Všechny využívají podobné technologie a jsou plně responsivní.</p>
                 <section className="projects">
-                    <Project img={thumbnailProject1}>
+                    <Project img={thumbnailProject1} link="https://fylo.adamfr.eu/">
                         <b>React</b> aplikace s využitím funkcionálních komponentů a preprocesoru <b>SASS</b>
                     </Project>
-                    <Project img={thumbnailProject2}>
+                    <Project img={thumbnailProject2} link="https://bookmark.adamfr.eu/">
                         Jednoduchá multipage aplikace s využitím <b>React Routeru</b>
                     </Project>
-                    <Project img={thumbnailProject3}>
+                    <Project img={thumbnailProject3} link="https://shortly.adamfr.eu/">
                         Web aplikace používající <b>API</b> na zkracování odkazů a <b>React Context</b>
                     </Project>
                 </section>

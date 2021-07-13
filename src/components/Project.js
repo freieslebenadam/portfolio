@@ -2,7 +2,7 @@ import React from 'react'
 import useHover from '../hooks/useHover'
 import Button from './Button'
 
-function Project({img, children}) {
+function Project({img, link, children}) {
     const [hover, ref] = useHover()
 
     return (
@@ -13,7 +13,7 @@ function Project({img, children}) {
                 <div style={hover?{display: "flex"}:{display: "none"}} className="project-info">
                     <div className="overlay"></div>
                     <p>{children}</p>
-                    <Button href="#" textColor="white">
+                    <Button link={link} target="_blank" textColor="white">
                         Navštívit web
                     </Button>
                 </div>
@@ -24,7 +24,8 @@ function Project({img, children}) {
 
 Project.defaultProps = {
     img: "http://placekitten.com/700/600",
-    text: "..."
+    text: "...",
+    link: "#"
 }
 
 export default Project
