@@ -1,12 +1,23 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
 
 function ContactForm() {
+    const [formSuccess, setFormSuccess] = useState("")
+    const [sending, setSending] = useState(false)
     const [formValues, setFormValues] = useState({
         firstName: "",
         lastName: "",
         email: "",
         text: ""
     })
+
+    useEffect(() => {
+        if (formSuccess !== "") {
+            setTimeout(() => {
+                setFormSuccess("")
+            }, 2000)
+        }
+    }, [formSuccess])
 
     function handleChange(e) {
         const {name, value} = e.target
@@ -18,8 +29,47 @@ function ContactForm() {
         })
     }
 
+    function handleSubmit(e) {
+        e.preventDefault()
+        setSending(true)
+        axios.post("mail.php", formValues)
+            .then((response) => {
+                if (response.data === "Fail") {
+                    setFormSuccess("Fail")
+                    setSending(false)
+                }
+                else {
+                    setFormSuccess("Success")
+                    setSending(false)
+                    setFormValues({
+                        firstName: "",
+                        lastName: "",
+                        email: "",
+                        text: ""
+                    })
+                }
+            }, (error) => {
+                console.log(error)
+            });
+    }
+
+    function buttonElement() {
+        if (sending) {
+            return <button className="sending" type="submit" disabled={true}>Odesílání...</button>
+        }
+        else if (formSuccess == "Success") {
+            return <button className="success" type="submit" disabled={true}>Odesláno!</button>
+        }
+        else if (formSuccess == "Fail") {
+            return <button className="fail" type="submit" disabled={true}>Neodesláno</button>
+        }
+        else {
+            return <button className="default" type="submit" disabled={false}>Odeslat</button>
+        }
+    }
+
     return(
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
             <fieldset className="half-split">
                 <div>
                     <label htmlFor="firstName">Jméno</label>
@@ -71,7 +121,7 @@ function ContactForm() {
                 </div>
             </fieldset>
             <fieldset className="button-wrapper">
-                <button type="submit">Odeslat</button>
+                { buttonElement() }
             </fieldset>
         </form>
     )

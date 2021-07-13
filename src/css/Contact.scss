@@ -99,6 +99,32 @@
                 background-color: $color1;
                 color: $color2;
             }
+
+            &.sending {
+                padding: .8em 3em;
+                opacity: .5;
+                border-color: $color2;
+                &:hover {
+                    cursor: default;
+                    background-color: transparent;
+                }
+            }
+            &.fail {
+                padding: .8em 3em;
+                border-color: black;
+                background-color: black;
+                &:hover {
+                    cursor: default;
+                }
+            }
+            &.success {
+                padding: .8em 3em;
+                border-color: limegreen;
+                background-color: limegreen;
+                &:hover {
+                    cursor: default;
+                }
+            }
         }
     }
 }
