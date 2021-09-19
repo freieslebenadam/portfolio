@@ -13,7 +13,7 @@ function Projects() {
         <article id="projects">
             <div className="container">
                 <h1>Ukázka mé práce:</h1>
-                <p>Zde je pár projektů jako ukázka mého vývoje webů. <br /> Všechny využívají podobné technologie a jsou plně responsivní.</p>
+                <p>Zde je pár projektů jako ukázka mého vývoje webů <br /><span className="small">(pouze kód, design jsem našel <a href="https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl">zde</a>)</span>. <br /> Všechny využívají ReactJS a jsou plně responsivní.</p>
                 <section className="projects">
                     <Project img={thumbnailProject1} link="https://fylo.adamfr.eu/">
                         <b>React</b> aplikace s využitím funkcionálních komponentů a preprocesoru <b>SASS</b>

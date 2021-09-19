@@ -26,14 +26,14 @@ function About() {
                             type="Front-end Developer"
                             text="Své weby píšu od základu a rád sleduji, jak se design proměnuje v hotový web."
                             tech={"HTML, CSS, JavaScript, jQuery, React, SASS"}
-                            tools={["Visual Studio Code", "NPM", "Github"]}
+                            tools={["Visual Studio Code", "Webpack", "NPM", "Github"]}
                             icon={frontEndIcon}
                         />
                         <Skill 
                             type="Back-end Developer"
                             text="Baví mě interaktivita napříč weby s použitím databáze, nebo vzdálených API dotazů."
-                            tech={"PHP, SQL, API"}
-                            tools={["Apache", "MySQL", "Visual Studio"]}
+                            tech={"PHP, MySQL, Nette, Symfony"}
+                            tools={["Apache", "PHPMyAdmin", "Composer", "PHP Storm"]}
                             icon={backEndIcon}
                         />
                     </div>
